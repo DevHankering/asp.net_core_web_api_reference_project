@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\asp.net_core_web_api_reference_project.props" />
+</Project>
