@@ -34,3 +34,37 @@
   - Versioning
     
    ![Screenshot (5)](https://github.com/user-attachments/assets/1146a394-a06c-4604-9213-52068314d963)
+
+## Async Programming
+- Traditional Synchronous programming - program execution is blocked
+- Poor performance (Synchronous programming)
+- Async/await keywords
+- More requests
+- asynchronous programming allows the program to continue executing other tasks while waiting for the long running operation to complete, resulting in a much better performance and responsiveness
+- return type for async is Task<IActionResult>
+- ToList() == ToListAsync()
+- Asynchronous comes from Microsoft.EntityFrameworkCore;
+- FirstOrDefault = FirstOrDefaultAsync
+- Add() = AddAsync()
+- use await if you see dbcontext
+- SaveChanges() = SaveChangesAsync()
+- Remove() method doesn't have a asyncronous method, so it is still synchronous method
+
+## Repository Pattern
+- Design pattern to separate the data access layer from the application
+- provides interface without exposing implementation
+- Helps create abstraction
+- Repository pattern typically involves creating an abstraction layer between the application and the data store, which is implemented by a concrete repository class.
+- The repository class is responsible for performing CRUD operations that is create, read, update and delete on the data store and it exposes a set of methods that the application can use to interact with the data .
+- It is the controller that is talking to the database using that dbcontext. That is also a wrong practice and using repository design pattern, we can eliminate that by adding an abstraction layer in between
+- repositories can be added in between the controller and the database so that all the operations on the database is then handled by the repository
+- The DbContext class is injected inside the repository rather than inside the controller, and it is the repository that then injects in the controller. So the controller will use the repository instead of using the dbcontext.
+- By doing that, the controller now has no awareness of what's being called through the DbContext, whether it's a SQL server database or a MongoDb database, it has no idea about it.
+- Controller is just using the interface method exposed by the interface repository and the implementation is hidden behind the implementation repository. Using that, you can switch the logic and the data stores behind the implementation repository. For example, you can use entity framework core to store your changes in a database, or you can just use an in-memory database by creating another implementation repository. All of those changes are happening behind the repository and the controller has no knowledge about the data stores at all.
+  ### Benefits
+  - Decoupling
+  - Consistency
+  - Performance
+  - Multiple data sources(switching)
+  ![Screenshot (6)](https://github.com/user-attachments/assets/36c3b435-0ece-42a2-9e88-82a42b1b1b80)
+
