@@ -66,5 +66,13 @@
   - Consistency
   - Performance
   - Multiple data sources(switching)
-  ![Screenshot (6)](https://github.com/user-attachments/assets/36c3b435-0ece-42a2-9e88-82a42b1b1b80)
+  ![Screen](https://github.com/user-attachments/assets/36c3b435-0ece-42a2-9e88-82a42b1b1b80)
+ ### Few Important points related to Repository pattern
+ - if we want to create repository for the region, a region domain model which we will use to just interact with the regions table, we would need a region repository and after that, after we have created the interface which exposes the CRUD operations, that is, create, read, delete and update.
+ - we would then need and implementation, a concrete implementation that would actually implement all these methods for us.
+ - Now the implementation can be named as a SqlRegionRepository.
+ - Guid.newGuid() is a method that gives a new guid address.
+ - ager hamare paas, many database hai to hamara repository interface apne methods ki difination kis database se uthayega, ye decide hota hai program.cs file me, jahan ham log btate hai ki kis interface ki implementation kis file se uthana hai, yah inject karne wale place pe hota hai.
+ - Task<Region> --> means can not be a null value --> type should be same in interface and also at where you implemented it
+ - Task<Region?> --> means can be a null value.  --> type should be same in interface and also at where you implemented it
 
