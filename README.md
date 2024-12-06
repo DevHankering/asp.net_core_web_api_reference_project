@@ -90,5 +90,10 @@
 - It can also be easily be integrated into your application using NuGet packages and configured using its fluent API.
 - From Nuget package manager, search and download **Automapper**
 - Mappings can be created using the method createmap
-- CreateMap<TSource, TDestination>
+- CreateMap<TSource, TDestination>();
+- CreateMap<TSource, TDestination>().ReverseMap();
+- CreateMap<TSource, TDestination>().ForMember(x => x.Name, opt => opt.MapFrom(x => x.FullName)).ReverseMap();
+- inside controller --> mapper.Map<Destination>(source);
+- inside program.cs --> builder.Services.AddAutoMapper(typeof(className));
+- 
 
