@@ -93,7 +93,6 @@
 - CreateMap<TSource, TDestination>();
 - CreateMap<TSource, TDestination>().ReverseMap();
 - CreateMap<TSource, TDestination>().ForMember(x => x.Name, opt => opt.MapFrom(x => x.FullName)).ReverseMap();
-- inside controller --> mapper.Map<Destination>(source);
+- inside controller --> mapper.Map<DestinationType>(source);
 - inside program.cs --> builder.Services.AddAutoMapper(typeof(className));
-- 
 
