@@ -40,5 +40,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "asp.net_core_web_api_reference_project.Controllers.RegionsController",
+    "Method": "Update",
+    "RelativePath": "api/Regions/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateRegionRequestDto",
+        "Type": "asp.net_core_web_api_reference_project.DTO.UpdateRegionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "asp.net_core_web_api_reference_project.Controllers.RegionsController",
+    "Method": "Delete",
+    "RelativePath": "api/Regions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
