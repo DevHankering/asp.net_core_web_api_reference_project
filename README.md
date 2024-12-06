@@ -75,4 +75,20 @@
  - ager hamare paas, many database hai to hamara repository interface apne methods ki difination kis database se uthayega, ye decide hota hai program.cs file me, jahan ham log btate hai ki kis interface ki implementation kis file se uthana hai, yah inject karne wale place pe hota hai.
  - Task<Region> --> means can not be a null value --> type should be same in interface and also at where you implemented it
  - Task<Region?> --> means can be a null value.  --> type should be same in interface and also at where you implemented it
+ - Difinition(interface) and implemetation(concrete class)
+ - Controller me return **NotFound()** likhte hai aur repository ki concrete class me **return null** likhte hai.
+ - May be null here ka matlab hai ki koi if condition lagana hai jisse ki if value null ho to manage ho sake for example jab ham db se call krte hai if(a == null) {return NotFound()}
+
+## Automapper
+- Auto Mapper is a popular object to object mapping library for dotnet applications, including ASP.NET Core .
+- it allows us to simplify the mapping process between two objects with different structures by defining mapping between their properties
+- Object to Object mapping
+- Simplification
+- Map between DTOs and Domain Models and Vice-versa
+- Quite powerful apart from just simple object to object mapping
+- In ASP.NET Core, Automapper is commonly used to map between domain models and view models or DTOs.
+- It can also be easily be integrated into your application using NuGet packages and configured using its fluent API.
+- From Nuget package manager, search and download **Automapper**
+- Mappings can be created using the method createmap
+- CreateMap<TSource, TDestination>
 
