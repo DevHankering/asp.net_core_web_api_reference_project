@@ -107,5 +107,6 @@
   3. generally, data seeding is done in dbContext file, So go there and write `override onModelCreating` Now you will get suggessions and in one suggession modelbuilder will be written, select that, hece you will get the structor for overriding.
   4. Inside the structure, we will create new list and seed the list into the database.
   5. When creating the list you will need the Id for every list item. For Id or identifier, we can not write `Guid.NewGuid()` which will give us a new guid id , becuase at every migration, `Guid.NewGuid()` will assign a new Guid id to the list item which we don't want.
-  6. So to solve this, we will go to **C# Interactive** window, to go there --> View>Other Windows>C# Interactive --> here will type `Guid.NewGuid()` and this will give us a GuidId, So just copy and paste it into your list item Id. 
+  6. So to solve this, we will go to **C# Interactive** window, to go there --> View>Other Windows>C# Interactive --> here will type `Guid.NewGuid()` and this will give us a GuidId, So just copy and paste it into your list item Id as `Guid.Parse(guid_id that you got)`
+  7. After creating the list, To seed the list is very simple --> `modelBuilder.Entity<List Data Type>().HasData(Provide the list here); --> this will seed the list into the database.
 
