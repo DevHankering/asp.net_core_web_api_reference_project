@@ -122,3 +122,10 @@
   - .Include is used to get table information instead of foreign key.
   - Now in our DTOs instead of giving field of RegionID and DifficultyID, just write the navigation property, and Now when you will fetch the table, the related tables's information will also be printed, so we don't need IDs for people to see, but if you want you can have them as well.
 
+## Model Validations
+- we want to act on those endpoints that are accepting data
+- since only Update and Create takes request, we are going to use Model validations on these. So go to your controller and start writting.
+- Go to request Dto, if your model property can take null value, it's fine. but if it can not, we will use `[required]` notation, see the examples in the project.
+- also you can decide the min and max length value as well in here there.
+- ModelState.IsValid returns the boolean value --> is out models or dto meets all the conditions, it returns true, otherwise it returns false.
+
