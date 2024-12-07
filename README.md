@@ -98,3 +98,14 @@
 - after injecting in program.cs, we can use it anywhere in out application, to use just create the constructor and import it as a parameter like this `IMapper mapper`
 - since we want to use it in our controller, create a constructor in the file and inside (), write IMapper mapper --> where IMapper becomes datatype and mapper become variable name but before that assign mapper as private field using ctrl+. and selecting field option.
 
+## Data Seeding
+- Data seeding refers to the process of populating a database with an initial set of data. This is often done to set up a development or testing environment by inserting predefined data into tables, allowing developers, testers, or administrators to work with sample data. It ensures that the database has all the necessary records to function properly during the application development process.
+- During the initial setup of a new project or system, predefined records such as users, categories, or configurations are seeded to ensure that the system operates properly.
+  ### How to Do Data Seeding
+  1. First, delete the tables from the database because otherwise you might get the error, that the table already exists.
+  2. we do data seeding using `onModelCreating` method.
+  3. generally, data seeding is done in dbContext file, So go there and write `override onModelCreating` Now you will get suggessions and in one suggession modelbuilder will be written, select that, hece you will get the structor for overriding.
+  4. Inside the structure, we will create new list and seed the list into the database.
+  5. When creating the list you will need the Id for every list item. For Id or identifier, we can not write `Guid.NewGuid()` which will give us a new guid id , becuase at every migration, `Guid.NewGuid()` will assign a new Guid id to the list item which we don't want.
+  6. So to solve this, we will go to **C# Interactive** window, to go there --> View>Other Windows>C# Interactive --> here will type `Guid.NewGuid()` and this will give us a GuidId, So just copy and paste it into your list item Id. 
+
