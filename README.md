@@ -95,4 +95,6 @@
 - CreateMap<TSource, TDestination>().ForMember(x => x.Name, opt => opt.MapFrom(x => x.FullName)).ReverseMap();
 - inside controller --> mapper.Map<DestinationType>(source);
 - inside program.cs --> builder.Services.AddAutoMapper(typeof(className));
+- after injecting in program.cs, we can use it anywhere in out application, to use just create the constructor and import it as a parameter like this `IMapper mapper`
+- since we want to use it in our controller, create a constructor in the file and inside (), write IMapper mapper --> where IMapper becomes datatype and mapper become variable name.
 
