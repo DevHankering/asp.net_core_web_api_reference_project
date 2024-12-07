@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\addwalkrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\addwalkrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\walkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\repositories\\sqlwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\repositories\\sqlwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\repositories\\iwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\repositories\\iwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\updatewalkrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\updatewalkrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\difficultydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\difficultydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,48 +75,8 @@
       "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\updateregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\migrations\\20241205003350_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\migrations\\20241205003350_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\data\\nzwalksdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\models\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|c:\\users\\rahul\\onedrive\\desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\migrations\\20241206210950_seeding data for difficulties and regions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6BAEB2-2839-4A09-AE1F-C14ADC92548E}|asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj|solutionrelative:asp.net_core_web_api_reference_project\\migrations\\20241206210950_seeding data for difficulties and regions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,37 +86,205 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SQLRegionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACEAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AddRegionRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:30:58.249Z",
+              "WhenOpened": "2024-12-07T21:34:16.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IRegionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "WalksController.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\WalksController.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Controllers\\WalksController.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\WalksController.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Controllers\\WalksController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:22:55.55Z",
+              "WhenOpened": "2024-12-06T21:20:02.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IWalkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IWalkRepository.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\IWalkRepository.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IWalkRepository.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\IWalkRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:49:33.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "SQLWalkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLWalkRepository.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\SQLWalkRepository.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLWalkRepository.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\SQLWalkRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:52:48.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NZWalksDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:05:40.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddWalkRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddWalkRequestDto.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\AddWalkRequestDto.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddWalkRequestDto.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\AddWalkRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:27:07.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WalkDto.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\WalkDto.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\WalkDto.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\WalkDto.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\WalkDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T22:12:46.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateWalkRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\UpdateWalkRequestDto.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\UpdateWalkRequestDto.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\UpdateWalkRequestDto.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\UpdateWalkRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T13:37:06.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAcwO8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:44:36.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Walk.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Walk.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Walk.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Walk.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Walk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:28:45.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Mappings\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Mappings\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:33:26.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DifficultyDto.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\DifficultyDto.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\DifficultyDto.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\DifficultyDto.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\DifficultyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T12:43:57.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Difficulty.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T10:22:52.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Region.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Region.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Region.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Region.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Region.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T10:22:50.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Program.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Program.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Program.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T22:05:33.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "asp.net_core_web_api_reference_project",
               "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj",
               "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj",
@@ -104,145 +292,44 @@
               "RelativeToolTip": "asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-05T16:20:15.022Z",
+              "WhenOpened": "2024-12-07T10:22:49.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Program.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Program.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Program.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T22:01:08.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegionsController.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Controllers\\RegionsController.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAAMEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T22:13:55.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Region.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Region.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Region.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Region.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Region.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:20:39.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateRegionRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\UpdateRegionRequestDto.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\UpdateRegionRequestDto.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\UpdateRegionRequestDto.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\UpdateRegionRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T13:39:26.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20241205003350_initial migration.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Migrations\\20241205003350_initial migration.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Migrations\\20241205003350_initial migration.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Migrations\\20241205003350_initial migration.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Migrations\\20241205003350_initial migration.cs",
+              "DocumentIndex": 16,
+              "Title": "SQLRegionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\SQLRegionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T00:33:51.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T22:03:09.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddRegionRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\AddRegionRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "IRegionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Repositories\\IRegionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T00:02:37.897Z"
+              "WhenOpened": "2024-12-06T21:52:57.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegionDto.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\RegionDto.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\DTO\\RegionDto.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\DTO\\RegionDto.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\DTO\\RegionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "20241206210950_seeding data for difficulties and regions.cs",
+              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Migrations\\20241206210950_seeding data for difficulties and regions.cs",
+              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Migrations\\20241206210950_seeding data for difficulties and regions.cs",
+              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Migrations\\20241206210950_seeding data for difficulties and regions.cs",
+              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Migrations\\20241206210950_seeding data for difficulties and regions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T00:01:00.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\appsettings.json",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\appsettings.json",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\appsettings.json",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-04T21:22:07.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Difficulty.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Difficulty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:19:44.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "NZWalksDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Data\\NZWalksDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T21:05:06.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Walk.cs",
-              "DocumentMoniker": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Walk.cs",
-              "RelativeDocumentMoniker": "asp.net_core_web_api_reference_project\\Models\\Walk.cs",
-              "ToolTip": "C:\\Users\\rahul\\OneDrive\\Desktop\\asp.net_core_web_api_reference_project\\asp.net_core_web_api_reference_project\\Models\\Walk.cs",
-              "RelativeToolTip": "asp.net_core_web_api_reference_project\\Models\\Walk.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:40:50.772Z"
+              "WhenOpened": "2024-12-06T21:09:53.89Z"
             }
           ]
         }

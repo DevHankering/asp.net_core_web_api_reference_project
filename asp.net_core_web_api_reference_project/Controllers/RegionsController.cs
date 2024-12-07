@@ -2,9 +2,11 @@
 using asp.net_core_web_api_reference_project.DTO;
 using asp.net_core_web_api_reference_project.Models;
 using asp.net_core_web_api_reference_project.Repositories;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace asp.net_core_web_api_reference_project.Controllers
 {
@@ -14,11 +16,13 @@ namespace asp.net_core_web_api_reference_project.Controllers
     {
         private readonly NZWalksDbContext dbContext;
         private readonly IRegionRepository regionRepository;
+        private readonly IMapper mapper;
 
-        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository)
+        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper)
         {
             this.dbContext = dbContext;
             this.regionRepository = regionRepository;
+            this.mapper = mapper;
         }
         //Get All Regions
         //Get: https://localhost:portnumber/api/regions
@@ -54,21 +58,22 @@ namespace asp.net_core_web_api_reference_project.Controllers
             var regionsDomain = await regionRepository.GetAllAsync();
 
             //step2. Map(convert) Domain model to Dtos
-            var regionsDto = new List<RegionDto>();
-            foreach (var region in regionsDomain) {
-                regionsDto.Add(new RegionDto()
-                {
-                    Id = region.Id,                          // This one way for creating the Dto
-                    Name = region.Name,
-                    Code = region.Code,
-                    RegionImageUrl = region.RegionImageUrl,
-                });
-            }
+            //var regionsDto = new List<RegionDto>();  //>>replaced by automapper
+            //foreach (var region in regionsDomain) {  //>>replaced by automapper
+            //    regionsDto.Add(new RegionDto()       //>>replaced by automapper
+            //    {                                    //>>replaced by automapper
+            //        Id = region.Id,                          // This is one way for creating the Dto     //>>replaced by automapper
+            //        Name = region.Name,              //>>replaced by automapper
+            //        Code = region.Code,              //>>replaced by automapper
+            //        RegionImageUrl = region.RegionImageUrl,     //>>replaced by automapper
+            //    });                                  //>>replaced by automapper
+            //}                //>>replaced by automapper
 
+            var regionsDto = mapper.Map< List < RegionDto >>(regionsDomain); // here we are using automapper and regionDomain is the source and regionDto is destination
 
             //step3. return Dtos
 
-            return Ok(regionsDto);
+            return Ok(regionsDto);   // you can do directly auto mapping in Ok response, this will make the core even more cleaner
         }
 
 
@@ -89,13 +94,15 @@ namespace asp.net_core_web_api_reference_project.Controllers
             }
 
             //step2. Map(convert) Domain Models to DTOs
-            var regionDto = new RegionDto
-            {
-                Id = regionDomain.Id,                          // This second way for creating the Dto
-                Name = regionDomain.Name,
-                Code = regionDomain.Code,
-                RegionImageUrl = regionDomain.RegionImageUrl,
-            };
+            //var regionDto = new RegionDto            //>>replaced by automapper
+            //{                                       //>>replaced by automapper
+            //    Id = regionDomain.Id,                           // This second way for creating the Dto        //>>replaced by automapper
+            //    Name = regionDomain.Name,
+            //    Code = regionDomain.Code,         //>>replaced by automapper
+            //    RegionImageUrl = regionDomain.RegionImageUrl,              //>>replaced by automapper
+            //};       //>>replaced by automapper  
+
+            var regionDto = mapper.Map<RegionDto>(regionDomain);
 
             //step2: return DTO back to client
             return Ok(regionDto);
@@ -107,12 +114,14 @@ namespace asp.net_core_web_api_reference_project.Controllers
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto) // we will use AddRegionRequestDto inside the controller as a parameter 
         {                                                                               // because we want information comming from the client
             //Map or Convert Dto to domain model
-            var regionDomainModel = new Region
-            {
-                Code = addRegionRequestDto.Code,
-                Name = addRegionRequestDto.Name,
-                RegionImageUrl = addRegionRequestDto.RegionImageUrl,
-            };
+            //var regionDomainModel = new Region       //>>replaced by automapper
+            //{                                        //>>replaced by automapper
+            //    Code = addRegionRequestDto.Code,     //>>replaced by automapper
+            //    Name = addRegionRequestDto.Name,     //>>replaced by automapper
+            //    RegionImageUrl = addRegionRequestDto.RegionImageUrl,    //>>replaced by automapper
+            //};          // replaced by automapper
+             
+             var regionDomainModel = mapper.Map<Region>(addRegionRequestDto);
 
             //Use Domain model to create region
             //await dbContext.Regions.AddAsync(regionDomainModel);  // replaced by repository
@@ -120,13 +129,15 @@ namespace asp.net_core_web_api_reference_project.Controllers
            regionDomainModel = await regionRepository.CreateAsync(regionDomainModel);
 
             //Map Domain model back to Dto
-            var regionDto = new RegionDto
-            {
-                Id = regionDomainModel.Id,
-                Name = regionDomainModel.Name,
-                Code = regionDomainModel.Code,
-                RegionImageUrl = regionDomainModel.RegionImageUrl,
-            };
+            //var regionDto = new RegionDto     //>>replaced by automapper
+            //{                                  //>>replaced by automapper
+            //    Id = regionDomainModel.Id,      //>>replaced by automapper
+            //    Name = regionDomainModel.Name,    //>>replaced by automapper
+            //    Code = regionDomainModel.Code,     //>>replaced by automapper
+            //    RegionImageUrl = regionDomainModel.RegionImageUrl,    //>>replaced by automapper
+            //};       //>>replaced by automapper
+
+            var regionDto = mapper.Map<RegionDto>(regionDomainModel);
 
 
             return CreatedAtAction(nameof(GetById), new { id = regionDomainModel.Id }, regionDto);
@@ -143,14 +154,16 @@ namespace asp.net_core_web_api_reference_project.Controllers
             //var regionDomainModel = await dbContext.Regions.FirstOrDefaultAsync(x => x.Id == id);  //>> replaced by repository
 
             //map dto to domain model
-            var regionDomainModel = new Region
-            {
-                Code = updateRegionRequestDto.Code,
-                Name = updateRegionRequestDto.Name,
-                RegionImageUrl = updateRegionRequestDto.RegionImageUrl,
-            };
+            //var regionDomainModel = new Region               //>>replaced by automapper
+            //{                                                 //>>replaced by automapper
+            //    Code = updateRegionRequestDto.Code,            //>>replaced by automapper
+            //    Name = updateRegionRequestDto.Name,             //>>replaced by automapper
+            //    RegionImageUrl = updateRegionRequestDto.RegionImageUrl,        //>>replaced by automapper
+            //};                                                      //>>replaced by automapper
 
-           regionDomainModel =  await regionRepository.UpdateAsync(id, regionDomainModel);
+            var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
+
+            regionDomainModel =  await regionRepository.UpdateAsync(id, regionDomainModel);
             if(regionDomainModel == null)
             {
                 return NotFound();
@@ -168,13 +181,15 @@ namespace asp.net_core_web_api_reference_project.Controllers
             //await dbContext.SaveChangesAsync();                   //>> replaced by repository
 
             //Convert Domain model to DTO
-            var regionDto = new RegionDto
-            {
-                Id = regionDomainModel.Id,
-                Code = regionDomainModel.Code,
-                Name = regionDomainModel.Name,
-                RegionImageUrl = regionDomainModel.RegionImageUrl,
-            };
+            //var regionDto = new RegionDto      //>>replaced by dto
+            //{                                 //>>replaced by dto
+            //    Id = regionDomainModel.Id,     //>>replaced by dto
+            //    Code = regionDomainModel.Code,    //>>replaced by dto
+            //    Name = regionDomainModel.Name,     //>>replaced by dto
+            //    RegionImageUrl = regionDomainModel.RegionImageUrl,    //>>replaced by dto
+            //};                        //>>replaced by dto
+
+            var regionDto = mapper.Map<RegionDto>(regionDomainModel);
 
             return Ok(regionDto);
                
@@ -204,14 +219,17 @@ namespace asp.net_core_web_api_reference_project.Controllers
 
             //as an option, you can return deleted region back, so for that
             //Map Domain model to Dto
-            var regionDto = new RegionDto
-            {
-                Id = regionDomainModel.Id,
-                Code = regionDomainModel.Code,
-                Name = regionDomainModel.Name,
-                RegionImageUrl = regionDomainModel.RegionImageUrl,
-            };
-            // and now return the regionDto instead of Ok();
+            //var regionDto = new RegionDto           //>>replaced by dto
+            //{                                      //>>replaced by dto
+            //    Id = regionDomainModel.Id,           //>>replaced by dto
+            //    Code = regionDomainModel.Code,      //>>replaced by dto
+            //    Name = regionDomainModel.Name,       //>>replaced by dto
+            //    RegionImageUrl = regionDomainModel.RegionImageUrl,      //>>replaced by dto
+            //};                                                 //>>replaced by dto
+
+            var regionDto = mapper.Map<RegionDto>(regionDomainModel);
+
+            // and now return the regionDto instead of Ok();        
             return Ok(regionDto);
         }
 

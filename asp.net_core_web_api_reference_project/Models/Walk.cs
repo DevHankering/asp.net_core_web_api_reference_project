@@ -11,7 +11,7 @@
 
         //Foreign Id
         public Guid DifficultyId {  get; set; }
-        public Guid RegionId { get; set; }
+        public Guid RegionId { get; set; } 
 
         //Navigation property
         public Difficulty Difficulty { get; set; }

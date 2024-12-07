@@ -133,3 +133,4 @@ C:\Users\rahul\OneDrive\Desktop\asp.net_core_web_api_reference_project\asp.net_c
 C:\Users\rahul\OneDrive\Desktop\asp.net_core_web_api_reference_project\asp.net_core_web_api_reference_project\obj\Debug\net8.0\asp.net_core_web_api_reference_project.pdb
 C:\Users\rahul\OneDrive\Desktop\asp.net_core_web_api_reference_project\asp.net_core_web_api_reference_project\obj\Debug\net8.0\asp.net_core_web_api_reference_project.genruntimeconfig.cache
 C:\Users\rahul\OneDrive\Desktop\asp.net_core_web_api_reference_project\asp.net_core_web_api_reference_project\obj\Debug\net8.0\ref\asp.net_core_web_api_reference_project.dll
+C:\Users\rahul\OneDrive\Desktop\asp.net_core_web_api_reference_project\asp.net_core_web_api_reference_project\bin\Debug\net8.0\AutoMapper.dll

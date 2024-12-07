@@ -1,4 +1,5 @@
 using asp.net_core_web_api_reference_project.Data;
+using asp.net_core_web_api_reference_project.Mappings;
 using asp.net_core_web_api_reference_project.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +18,10 @@ options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")
 
 // Injecting Repository
 builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
+builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
+
+//Injecting AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 
