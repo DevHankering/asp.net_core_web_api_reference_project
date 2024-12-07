@@ -130,4 +130,11 @@
 - `ModelState.IsValid` returns the boolean value --> is out models or dto meets all the conditions, it returns true, otherwise it returns false.
 - 400 stands for **Bad Request**
 - ModelState is an Object, we return this as a return object, and also this object holds the error message that you provided in Dto.
+  ### Using Custom Action Filter For Validation
+  - Instead of writting `ModelState.IsValid` again and again, we have a slightly advanced technique which is using Custom Action Filter for validating.
+  - First of All, create a new folder --> Custom Action Filter and inside this create an class Named ValidateModelAttribute.
+  - Now inherit the class with ActionFilterAttribute.
+  - Now inside the class body, write override OnActionExecuting and select the structure for it.
+  - Now delete everything that is written inside this structures' body and start writting `if(context.ModelState.IsValid == false){context.Result = new BadRequestResult();}`
+  - Now beneath [HttpPost] and [HttpPut], just write [ValidateModel] and it's done. Now you don't need to write if(ModelState.IsValid) every time.
 
