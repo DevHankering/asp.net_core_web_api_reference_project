@@ -117,4 +117,7 @@
 - Entity framwork core has a way to get the related table information like region, difficulty information inside the walk table instead of IDs and that is what navigation property.
 - Navigation properties are used to fetch related data from the database.
 - Navigation properties are typically defined in the form of an object of collection of object that reference another entity or entities
+  ### How to Use Navigation property
+  - jab ham log data get krte hai using `.ToList()` method, to isse pahle you can write `.Include(Navigation_Property_name_as_a_string)` or `Include(x => x.Navigation_Property_name_as_a_string)` which is type safe. you can do chainning also with `.Include`.
+  - .Include is used to get table information instead of foreign key.
 
