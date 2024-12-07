@@ -127,5 +127,7 @@
 - since only Update and Create takes request, we are going to use Model validations on these. So go to your controller and start writting.
 - Go to request Dto, if your model property can take null value, it's fine. but if it can not, we will use `[required]` notation, see the examples in the project.
 - also you can decide the min and max length value as well in here there.
-- ModelState.IsValid returns the boolean value --> is out models or dto meets all the conditions, it returns true, otherwise it returns false.
+- `ModelState.IsValid` returns the boolean value --> is out models or dto meets all the conditions, it returns true, otherwise it returns false.
+- 400 stands for **Bad Request**
+- ModelState is an Object, we return this as a return object, and also this object holds the error message that you provided in Dto.
 
