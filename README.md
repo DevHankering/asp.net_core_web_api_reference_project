@@ -120,4 +120,5 @@
   ### How to Use Navigation property
   - jab ham log data get krte hai using `.ToList()` method, to isse pahle you can write `.Include(Navigation_Property_name_as_a_string)` or `Include(x => x.Navigation_Property_name_as_a_string)` which is type safe. you can do chainning also with `.Include`.
   - .Include is used to get table information instead of foreign key.
+  - Now in our DTOs instead of giving field of RegionID and DifficultyID, just write the navigation property, and Now when you will fetch the table, the related tables's information will also be printed, so we don't need IDs for people to see, but if you want you can have them as well.
 
