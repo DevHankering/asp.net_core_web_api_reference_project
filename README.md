@@ -111,4 +111,10 @@
   7. After creating the list, To seed the list is very simple --> `modelBuilder.Entity<List_Data_Type>().HasData(Provide_the_list_here);` --> this will seed the list into the database.
   8. Now we will run the migration, but before running, just close your IDE or application and re open it, then run migration,
   9. That's it, you data seeding is complte.
+  10. When posting data, swagger will provide you with a dummy id, so don't get cofused with it, just remove the id and past the id from the database that you seeded in database.
+
+## Navigation Properties in EF Core
+- Entity framwork core has a way to get the related table information like region, difficulty information inside the walk table instead of IDs and that is what navigation property.
+- Navigation properties are used to fetch related data from the database.
+- Navigation properties are typically defined in the form of an object of collection of object that reference another entity or entities
 
