@@ -138,3 +138,17 @@
   - Now delete everything that is written inside this structures' body and start writting `if(context.ModelState.IsValid == false){context.Result = new BadRequestResult();}`
   - Now beneath [HttpPost] and [HttpPut], just write [ValidateModel] and it's done. Now you don't need to write if(ModelState.IsValid) every time.
 
+ ## Authentication and Authorization - JWT Tokens
+  ### Authentication
+  - The process to determine a user's Identity
+  - Username and Password
+  - By using authentication, we check if we trust the user.
+  ### Authorization
+  - User permission
+  - Roles, Policies, Claims
+  - Check if User has ReadOnly or ReadWrite Role
+  ### JWT
+  - server creates it and pass it to the client
+  - Through JWT, we securely transmite information between parties as a JSON object.
+  - The users will type in, their username and password using a login form and the website will send this information to the API. The API will check the username and password and if this information is correct, it will generate a JWT token for the website user. The website will then use this JWT token as a way to make HTTP calls to the API to access the resources of the API and get data from the API. The API will check if the token is correct and if it is, the API will return the data that the website asked for. If the website doesn't send a JWT or it i invalid, then no data is returned from the API. This is the authentication flow.
+
