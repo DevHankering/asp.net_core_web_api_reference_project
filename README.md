@@ -153,5 +153,9 @@
   - The users will type in, their username and password using a login form and the website will send this information to the API. The API will check the username and password and if this information is correct, it will generate a JWT token for the website user. The website will then use this JWT token as a way to make HTTP calls to the API to access the resources of the API and get data from the API. The API will check if the token is correct and if it is, the API will return the data that the website asked for. If the website doesn't send a JWT or it i invalid, then no data is returned from the API. This is the authentication flow.
     ![jwt(1)](https://github.com/user-attachments/assets/30638293-8835-4c44-848c-2dc60733b472)
 ![JWT(2)](https://github.com/user-attachments/assets/bc0568fc-b581-45d0-9fee-cfd395106d49)
+### Install Some NuGet Packages For Our Authentication Process
+   ![NuGet_package-list](https://github.com/user-attachments/assets/e7315ad4-13b2-4215-9bd2-9fe1a24fc951)
+ - after install the NuGet packages, Go to appsettings.json, and after connection string, create a new object, see the project for reference.
+
 
 
