@@ -1,4 +1,5 @@
-﻿using asp.net_core_web_api_reference_project.DTO;
+﻿using asp.net_core_web_api_reference_project.CustomActionFilters;
+using asp.net_core_web_api_reference_project.DTO;
 using asp.net_core_web_api_reference_project.Models;
 using asp.net_core_web_api_reference_project.Repositories;
 using AutoMapper;
@@ -22,13 +23,20 @@ namespace asp.net_core_web_api_reference_project.Controllers
 
         //Create Walk
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> Create([FromBody] AddWalkRequestDto addWalkRequestDto)
         {
-            //Map DTO to Domain model
-            var walkDomainModel = mapper.Map<Walk>(addWalkRequestDto);
-            await walkRepository.CreateAsync(walkDomainModel);
-            //Map Domain model to dto and return it
-            return Ok(mapper.Map<WalkDto>(walkDomainModel));
+            //if (ModelState.IsValid)      //>>replaced by [ValidateModel]
+            //{                            //>>replaced by [ValidateModel]
+                //Map DTO to Domain model
+                var walkDomainModel = mapper.Map<Walk>(addWalkRequestDto);
+                await walkRepository.CreateAsync(walkDomainModel);
+                //Map Domain model to dto and return it
+                return Ok(mapper.Map<WalkDto>(walkDomainModel));
+            //}                          //>>replaced by [ValidateModel]
+
+            //return BadRequest(ModelState);          //>>replaced by [ValidateModel]
+
         }
 
         [HttpGet]
@@ -58,18 +66,24 @@ namespace asp.net_core_web_api_reference_project.Controllers
 
         //update walk by Id
         [HttpPut]
+        [ValidateModel]
         [Route("{id:guid}")]
         public async Task<IActionResult> UpdateAsync([FromRoute] Guid id, UpdateWalkRequestDto updateWalkRequestDto)
         {
-            //map dto to domain model
-            var walkDomainModel = mapper.Map<Walk>(updateWalkRequestDto);
-            walkDomainModel = await walkRepository.UpdateAsync(id, walkDomainModel);
-            if(walkDomainModel == null)
-            {
-                return NotFound();
-            };
-            //map Domain model to Dto
-            return Ok(mapper.Map<WalkDto>(walkDomainModel));
+            //if (ModelState.IsValid)
+            //{
+                //map dto to domain model
+                var walkDomainModel = mapper.Map<Walk>(updateWalkRequestDto);
+                walkDomainModel = await walkRepository.UpdateAsync(id, walkDomainModel);
+                if (walkDomainModel == null)
+                {
+                    return NotFound();
+                };
+                //map Domain model to Dto
+                return Ok(mapper.Map<WalkDto>(walkDomainModel));
+            //}
+
+            //return BadRequest(ModelState);
 
         }
 

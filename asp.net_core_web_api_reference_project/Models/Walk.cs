@@ -7,7 +7,7 @@
         public string Description { get; set; }
 
         public string LengthInKm { get; set; }
-        public string WalkImageUrl { get; set; }
+        public string? WalkImageUrl { get; set; }
 
         //Foreign Id
         public Guid DifficultyId {  get; set; }

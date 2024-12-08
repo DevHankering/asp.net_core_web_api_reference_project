@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("asp.net_core_web_api_reference_project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4c2d7b7ccd27778dbc500a91cbcfbf276f64895")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cfdd666d18b946b66664be933cbffeaf4b75725")]
 [assembly: System.Reflection.AssemblyProductAttribute("asp.net_core_web_api_reference_project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("asp.net_core_web_api_reference_project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
