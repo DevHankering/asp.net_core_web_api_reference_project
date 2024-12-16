@@ -181,8 +181,8 @@
             **ValidIssuer = builder.Configuration["Jwt:Issuer"],** //Only tokens from this issuer will be accepted.
             **ValidAudience = builder.Configuration["Jwt:Audience"],**  // This ensures the token is meant for your application (or specific API) and not some other application.
             **IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))**    //  This key is crucial for verifying that the token hasn't been tampered with. If the signature doesn't match, the token is rejected.  // we will give the encoded version of the key.
-        };
-    });
+        **};
+    });**
     - **AddAuthentication** method enables authentication for your application.
   
     - **.AddJwtBearer(options => { ... })** -->  It defines how the JWTs will be validated when received in HTTP requests.
