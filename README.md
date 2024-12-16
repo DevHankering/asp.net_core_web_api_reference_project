@@ -290,6 +290,27 @@
  ## Note:
  - If you have more than one dbContext into you asp.net core application, you will this command for migration --> `add-migration "comment" -Context "dbContextName"` and for dababase update, we will write `update-database -context "dbContextName`
  - Inside tables, in `AspNetRole` we have roles that we created. and when users are created, they will end up in the `ASPNetUsers` table
+   # Now we will inject identity to our solution
+   - we add the indentity in `program.cs` file above the authentication.
+     ```
+     builder.Services.AddIdentityCore<IdentityUser>()
+          .AddRoles<IdentityRole>()
+          .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("NZWalks")
+          .AddEntityFrameworkStores<NZWalksAuthDbContext>()
+          .AddDefaultTokenProviders();
+
+
+     builder.Services.Configure<IdentityOptions>(options =>
+     {
+          options.Password.RequireDigit = false;
+          options.Password.RequireLowercase = false;
+          options.Password.RequireNonAlphanumeric = false;
+          options.Password.RequireUppercase = false;
+          options.Password.RequireLength = 6;
+          options.Password.RequiredUniqueChars = 1;
+     });
+
+     ```
          
 
           
