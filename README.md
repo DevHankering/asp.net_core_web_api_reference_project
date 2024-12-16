@@ -194,6 +194,17 @@
       - **app.UseAuthentication();**  --> should be above **app.UseAuthorization** --> because authentication happens before authorization
       - Ager controller ke upper **[Authorize]** likh diya jaye to jo bhi http request aayengi is controller ke paas, vo sabhi bina JWT authentication ke data access or post data nhee kar payengi.
       - ![Capture-16](https://github.com/user-attachments/assets/a7d00e6f-6151-4936-bb01-d1265efb4b43)
+    5. Register and Login [With Roles]
+      - Setting Up Auth Database
+      - ![Capture-17](https://github.com/user-attachments/assets/51d12895-be0a-4d1e-aa6e-8972796dd4c4)
+      - Now Add new **ConnectionString** into appsettings.json file and just change the database name, otherwise it is same as default string.
+      - Now Create a new DbContext file into Data folder --> inside the data folder, we only have one DbContext at the moment which deals with the tables like student,address,images,regions, walks, and difficulties. Now we need a DbContext that deals with the authentication tables like users and roles. So now we will create **AuthDbContext**.
+      - This AuthDbContext will inherit from **identityDbContext** and this comes from the package **Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+        -Now we need a constructor inside the AuthDbContext, So just right click on the className and press ctrl + .  and now click on *Generate constructor with Options parameter** .
+        - Now we will inject this dbContext into our **program.cs** file. it will be injected just like a normal Dbcontext.
+        - **Remember** --> when we have more than one DbContext, we need to specify in constructor in our DbContext file, which DbContext we are going to use. So instead of writting **DbContextOptions** inside our constructor, we are going to use **DbContextOptions<TypeOfDbContext>**  --> Normally TypeOfDbContext is the name of our DbContext or DbContext class like AuthDbContext.
+        - 
+
 
 
 
