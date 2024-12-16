@@ -168,6 +168,27 @@
     "Audience": "yourdomain.com",
     "SecretKey": "your-very-secret-key-here"
 }
+       - you can find YourDomain here --> means applicationURL --> thirdClickOnProjectName>GoToProperties>General>OpenDebugLaunchProfilesUI>https>AppURL
+      3. Configure JWT authentication in program.cs file
+         - builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,   // claims token is issued by me
+            ValidateAudience = true,  // Ensures that the token is intended for your application (or another specific resource).
+            ValidateLifetime = true,  // Ensures that the token is still valid and has not expired. If the token is expired, it will be rejected.
+            ValidIssuer = builder.Configuration["Jwt:Issuer"], //Only tokens from this issuer will be accepted.
+            ValidAudience = builder.Configuration["Jwt:Audience"],  // This ensures the token is meant for your application (or specific API) and not some other application.
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))    //  This key is crucial for verifying that the token hasn't been tampered with. If the signature doesn't match, the token is rejected.  // we will give the encoded version of the key.
+        };
+    });
+    - **AddAuthentication** method enables authentication for your application.
+  
+    - **.AddJwtBearer(options => { ... })** -->  It defines how the JWTs will be validated when received in HTTP requests.
+    - **Note:** The secret key is usually kept private and should not be exposed or checked into version control. It's often stored securely (e.g., in environment variables or a secrets management system).
+
+   
 
 
 
