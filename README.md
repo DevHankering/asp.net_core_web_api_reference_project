@@ -162,7 +162,12 @@
        - Microsoft.IdentityModel.Tokens
        - System.IdentityModel.Tokens.Jwt
        - Microsoft.AspNetCore.Identity.EntityFrameworkCore
-    2. 
+    2. Configure JWT Settings in appsettings.json
+       - "Jwt": {
+    "Issuer": "yourdomain.com",
+    "Audience": "yourdomain.com",
+    "SecretKey": "your-very-secret-key-here"
+}
 
 
 
