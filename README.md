@@ -312,6 +312,9 @@
 
      ```
      ![Screenshot (27)](https://github.com/user-attachments/assets/7534001a-7f5b-4526-a8ff-0839b6c10110)
+
+     # NEXT: -> Now we will create a new controller which is Auth Controller and we will create the new register action method so that users can request a user to get created inside our identity database.
+     - When someone wants to create a new user, they will have to supply us with the username and password information. So we will have to create a requestDto for this register method.
      
 
          
