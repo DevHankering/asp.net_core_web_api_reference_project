@@ -157,19 +157,19 @@
    ![NuGet_package-list](https://github.com/user-attachments/assets/e7315ad4-13b2-4215-9bd2-9fe1a24fc951)
  - after install the NuGet packages, Go to appsettings.json, and after connection string, create a new object, see the project for reference.
  - ### Steps
-    1. Install 4 Nuget packages
+    1. ### Install 4 Nuget packages
        - Microsoft.AspNetCore.Authentication.JwtBearer
        - Microsoft.IdentityModel.Tokens
        - System.IdentityModel.Tokens.Jwt
        - Microsoft.AspNetCore.Identity.EntityFrameworkCore
-    2. Configure JWT Settings in appsettings.json
+    2. ### Configure JWT Settings in appsettings.json
        - "Jwt": {
     "Issuer": "yourdomain.com",
     "Audience": "yourdomain.com",
     "SecretKey": "your-very-secret-key-here"
 }
        - you can find YourDomain here --> means applicationURL --> thirdClickOnProjectName>GoToProperties>General>OpenDebugLaunchProfilesUI>https>AppURL
-      3. Configure JWT authentication in program.cs file
+      3. ### Configure JWT authentication in program.cs file
          - **builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -189,12 +189,12 @@
     - **Note:** The secret key is usually kept private and should not be exposed or checked into version control. It's often stored securely (e.g., in environment variables or a secrets management system).
     - ![Capture-14](https://github.com/user-attachments/assets/8e34b48b-c00e-4fcb-a2f2-4233c60ee232)
     - ![Capture-13](https://github.com/user-attachments/assets/539e3059-6b95-4abd-a61e-ff4ac78d07bb)
-   4. Add athentication into middleware pipeline -->  app.UseAuthentication();
+   4. ### Add athentication into middleware pipeline -->  app.UseAuthentication();
       - ![Capture-15](https://github.com/user-attachments/assets/34c4dbe0-8ad9-4f7d-a4cf-a7c3decfeef3)
       - **app.UseAuthentication();**  --> should be above **app.UseAuthorization** --> because authentication happens before authorization
       - Ager controller ke upper **[Authorize]** likh diya jaye to jo bhi http request aayengi is controller ke paas, vo sabhi bina JWT authentication ke data access or post data nhee kar payengi.
       - ![Capture-16](https://github.com/user-attachments/assets/a7d00e6f-6151-4936-bb01-d1265efb4b43)
-    5. Register and Login [With Roles]
+    5. ### Register and Login [With Roles]
       - Setting Up Auth Database
       - ![Capture-17](https://github.com/user-attachments/assets/51d12895-be0a-4d1e-aa6e-8972796dd4c4)
       - Now Add new **ConnectionString** into appsettings.json file and just change the database name, otherwise it is same as default string.
@@ -203,7 +203,10 @@
         - *Now we need a constructor inside the AuthDbContext, So just right click on the className and press ctrl + .  and now click on *Generate constructor with Options parameter* .
         - Now we will inject this dbContext into our **program.cs** file. it will be injected just like a normal Dbcontext.
         - **Remember** --> when we have more than one DbContext, we need to specify in constructor in our DbContext file, which DbContext we are going to use. So instead of writting **DbContextOptions** inside our constructor, we are going to use DbContextOptions< TypeOfDbContext >  --> Normally TypeOfDbContext is the name of our DbContext or DbContext class like AuthDbContext.
-        - 
+        - Now inside the **AuthDbContext** , we will create **roles** and we want to **seed** some roles into the database so that when we do a user registration, we can supply these roles and create a user with these roles.
+        - We will use **override onModelCreating** method to seed some data into the database.
+        - Here we will create a list called roles and the type will be IdentityRole which comes from *Microsoft.AspNetCore.Identity*.
+      
 
 
 
