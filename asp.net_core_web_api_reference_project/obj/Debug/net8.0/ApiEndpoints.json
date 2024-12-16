@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "asp.net_core_web_api_reference_project.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDto",
+        "Type": "asp.net_core_web_api_reference_project.DTO.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "asp.net_core_web_api_reference_project.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerRequestDto",
+        "Type": "asp.net_core_web_api_reference_project.DTO.RegisterRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "asp.net_core_web_api_reference_project.Controllers.RegionsController",
     "Method": "GetAll",
     "RelativePath": "api/Regions",

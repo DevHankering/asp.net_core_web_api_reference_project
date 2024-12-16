@@ -4,6 +4,7 @@ using asp.net_core_web_api_reference_project.DTO;
 using asp.net_core_web_api_reference_project.Models;
 using asp.net_core_web_api_reference_project.Repositories;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RegionsController : ControllerBase
     {
         private readonly NZWalksDbContext dbContext;
