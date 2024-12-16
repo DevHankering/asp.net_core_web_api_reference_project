@@ -242,11 +242,52 @@
    1. **Role Creation**: You define and create roles for your application, such as "Admin", "User", "Reader", or "Editor", depending on the needs of your application. This is done by creating instances of the `IdentityRole` class and adding them to the `RoleManager<IdentityRole>`.
    2. **Role Assignment**: You assign users to these roles using the `UserManager<TUser>` and `RoleManager<IdentityRole>` services, typically by calling `AddToRoleAsync` on the user manager. Once a user is assigned a role, they inherit the permissions associated with that role.
    3. **Role-based Authorization**: Once roles are assigned to users, you can use role-based authorization to restrict access to parts of your application. For example, you can use attributes like `[Authorize(Roles = "Admin")]` to specify that only users in the "Admin" role can access certain pages or perform certain actions.
+      ## Example: Creating and Using `IdentityRole` in ASP.NET Core
+      - ### **1.Creating Roles Programmatically**
+         ```
+         public class ApplicationDbContextSeed
+         {
+            public static async Task SeedRoles(RoleManager<IdentityRole> roleManager)
+           {
+             // Check if the "Admin" role exists, if not, create it.
+             if (!await roleManager.RoleExistsAsync("Admin"))
+             {
+             await roleManager.CreateAsync(new IdentityRole("Admin"));
+             }
+
+             // Check if the "User" role exists, if not, create it.
+             if (!await roleManager.RoleExistsAsync("User"))
+              {
+              await roleManager.CreateAsync(new IdentityRole("User"));
+               }
+             }
+          }
+           ```
+         - ### **2. Assigning a Role to a User**
+           ```
+                public async Task AssignRoleToUser(UserManager<ApplicationUser> userManager, string userId, string roleName)
+           {
+                var user = await userManager.FindByIdAsync(userId);
+                if (user != null)
+              {
+                await userManager.AddToRoleAsync(user, roleName);
+               }
+            }
+           ```
+           - ### **3. Role-based Authorization**
+             - You can use roles to control access to certain parts of your application.
+               ```
+                      [Authorize(Roles = "Admin")]
+                     public IActionResult AdminDashboard()
+                 {
+                      return View();
+                 }
+               ```
       ## Summary of `IdentityRole`
       - `IdentityRole` is a class used to represent a role in ASP.NET Core Identity, which is part of the user authentication and authorization system.
       - It is typically used to manage user roles and assign permissions based on those roles.
       - Roles are created and assigned to users, and role-based authorization helps control access to different parts of the application.
-
+         
 
           
 
