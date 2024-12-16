@@ -315,6 +315,11 @@
 
      # NEXT: -> Now we will create a new controller which is Auth Controller and we will create the new register action method so that users can request a user to get created inside our identity database.
      - When someone wants to create a new user, they will have to supply us with the username and password information. So we will have to create a requestDto for this register method.
+     -  we use userManager class that identity provides us to register a user or to create a user. so we have to inject the user manager class. in our AuthController in Constructor.
+     -  Now we will create a this auth controller.
+     -  After creating Auth controller --> we will register a user.
+     -  Now that we have a user created, the user will log in to our application using the username and password that they have and we will be checking the username and password and seeing if we have the user registered. after that we will create a token for them once they have successfully told us that they are a valid user.
+     -  So for that we need a login action method and this will be another post method.
      
 
          
