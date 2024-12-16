@@ -214,6 +214,12 @@
         - `Name` : The user-friendly name of the role, like `"Reader"` or `"Writer"`.
         - `NormalizedName` : A standardized (usually uppercase) version of the `Name`, used for case-insensitive comparisons.
         - By using both `Name` and `NormalizedName`, the system is able to store both the readable form and an efficient version for comparisons, improving both usability and performance in lookups.
+        - ### IdentityRole
+          - In ASP.NET Core Identity, an `IdentityRole` is a class that represents a role in a system that uses role-based authorization.
+          -  Instead of assigning individual permissions directly to each user, you assign users to roles, and then you define what permissions are associated with those roles.
+          -  For example:
+              - A Reader role might allow users to only view content.
+              - A Writer role might allow users to view and edit content.
       
 
 
