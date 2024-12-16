@@ -187,6 +187,15 @@
   
     - **.AddJwtBearer(options => { ... })** -->  It defines how the JWTs will be validated when received in HTTP requests.
     - **Note:** The secret key is usually kept private and should not be exposed or checked into version control. It's often stored securely (e.g., in environment variables or a secrets management system).
+    - ![Capture-14](https://github.com/user-attachments/assets/8e34b48b-c00e-4fcb-a2f2-4233c60ee232)
+    - ![Capture-13](https://github.com/user-attachments/assets/539e3059-6b95-4abd-a61e-ff4ac78d07bb)
+   4. Add athentication into middleware pipeline -->  app.UseAuthentication();
+      - ![Capture-15](https://github.com/user-attachments/assets/34c4dbe0-8ad9-4f7d-a4cf-a7c3decfeef3)
+      - **app.UseAuthentication();**  --> should be above **app.UseAuthorization** --> because authentication happens before authorization
+
+
+
+    
 
    
 
