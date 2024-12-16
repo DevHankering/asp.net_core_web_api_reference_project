@@ -210,8 +210,8 @@
         - the first one is Id which should be an string type. --> since we are going to use Guid id --> we will get new Guid from **C#Interactive** after typing **Guid.NewGuid()** --> we will store this into a variable as a string, and now we will use this variable as a value for the Id.
         - at the end, we will seed this list inside the builder object. --> we will provide roles list to **IdentityRole** entity. --> *builder.Entity< IdentityRole >().HasData(roles);*
         - ![Screenshot (18)](https://github.com/user-attachments/assets/397792bb-c83d-4d18-91b1-283e987bd194)
-        - ```bash
-echo "Hello, World!"
+        - ```bash echo "Hello, World!"
+
 
       
 
