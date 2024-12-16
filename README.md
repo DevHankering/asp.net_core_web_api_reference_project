@@ -287,6 +287,9 @@
       - `IdentityRole` is a class used to represent a role in ASP.NET Core Identity, which is part of the user authentication and authorization system.
       - It is typically used to manage user roles and assign permissions based on those roles.
       - Roles are created and assigned to users, and role-based authorization helps control access to different parts of the application.
+ ## Note:
+ - If you have more than one dbContext into you asp.net core application, you will this command for migration --> `add-migration "comment" -Context "dbContextName"` and for dababase update, we will write `update-database -context "dbContextName`
+ - Inside tables, in `AspNetRole` we have roles that we created. and when users are created, they will end up in the `ASPNetUsers` table
          
 
           
