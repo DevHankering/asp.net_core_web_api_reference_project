@@ -156,6 +156,13 @@
 ### Install Some NuGet Packages For Our Authentication Process
    ![NuGet_package-list](https://github.com/user-attachments/assets/e7315ad4-13b2-4215-9bd2-9fe1a24fc951)
  - after install the NuGet packages, Go to appsettings.json, and after connection string, create a new object, see the project for reference.
+ - ### Steps
+    1. Install 4 Nuget packages
+       - Microsoft.AspNetCore.Authentication.JwtBearer
+       - Microsoft.IdentityModel.Tokens
+       - System.IdentityModel.Tokens.Jwt
+       - Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    2. 
 
 
 
