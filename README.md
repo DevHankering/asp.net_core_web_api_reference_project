@@ -206,6 +206,9 @@
         - Now inside the **AuthDbContext** , we will create **roles** and we want to **seed** some roles into the database so that when we do a user registration, we can supply these roles and create a user with these roles.
         - We will use **override onModelCreating** method to seed some data into the database.
         - Here we will create a list called roles and the type will be IdentityRole which comes from *Microsoft.AspNetCore.Identity*.
+        - Inside IdentityRole, we have 4 properties
+        - the first one is Id which should be an string type. --> since we are going to use Guid id --> we will get new Guid from **C#Interactive** after typing **Guid.NewGuid()** --> we will store this into a variable as a string, and now we will use this variable as a value for the Id.
+        - at the end, we will seed this list inside the builder object. --> we will provide roles list to **IdentityRole** entity. --> *builder.Entity<IdentityRole>().HasData(roles);*
       
 
 
