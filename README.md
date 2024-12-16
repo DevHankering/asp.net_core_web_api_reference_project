@@ -202,7 +202,7 @@
       - This AuthDbContext will inherit from **identityDbContext** and this comes from the package **Microsoft.AspNetCore.Identity.EntityFrameworkCore;**
         - *Now we need a constructor inside the AuthDbContext, So just right click on the className and press ctrl + .  and now click on *Generate constructor with Options parameter* .
         - Now we will inject this dbContext into our **program.cs** file. it will be injected just like a normal Dbcontext.
-        - **Remember** --> when we have more than one DbContext, we need to specify in constructor in our DbContext file, which DbContext we are going to use. So instead of writting **DbContextOptions** inside our constructor, we are going to use **DbContextOptions<TypeOfDbContext>**  --> Normally TypeOfDbContext is the name of our DbContext or DbContext class like AuthDbContext.
+        - **Remember** --> when we have more than one DbContext, we need to specify in constructor in our DbContext file, which DbContext we are going to use. So instead of writting **DbContextOptions** inside our constructor, we are going to use **DbContextOptions*<TypeOfDbContext>***  --> Normally TypeOfDbContext is the name of our DbContext or DbContext class like AuthDbContext.
         - 
 
 
