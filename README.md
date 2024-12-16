@@ -220,6 +220,7 @@
           -  For example:
               - A Reader role might allow users to only view content.
               - A Writer role might allow users to view and edit content.
+     ## Key Components of the `IdentityRole` Class
       
 
 
