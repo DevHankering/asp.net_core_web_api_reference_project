@@ -221,6 +221,22 @@
               - A Reader role might allow users to only view content.
               - A Writer role might allow users to view and edit content.
      ## Key Components of the `IdentityRole` Class
+   - The `IdentityRole` class, which is part of the `Microsoft.AspNetCore.Identity` namespace, typically contains the following properties:
+      1. `Id`:
+         - Type: `string`
+         - Represents a unique identifier for the role.
+         - This is often a GUID (Globally Unique Identifier) or a string, depending on how the Identity system is configured.
+      2. `Name`:
+         - Type: `string`
+         - Represents the name of the role (e.g., "Admin", "Reader", "Writer").
+         - This is typically a user-friendly string that can be displayed to users or administrators.
+      3. `NormalizedName`:
+         - Type: `string`
+         - Represents the normalized version of the role name (usually uppercase), used for case-insensitive role comparisons.
+         - It helps to optimize searches and role lookups to ensure consistent comparisons across case variations. For example, "admin" and "ADMIN" would be treated as the same role because of the normalized name.
+      4. `ConcurrencyStamp`:
+         - Type: `string`
+         - A unique stamp used for concurrency control, ensuring that the role hasn’t been modified by another process when you're making changes to it. This is used for optimistic concurrency checking, which helps prevent overwriting changes when multiple users or processes are working with the same role.
       
 
 
