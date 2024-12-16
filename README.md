@@ -210,6 +210,10 @@
         - the first one is Id which should be an string type. --> since we are going to use Guid id --> we will get new Guid from **C#Interactive** after typing **Guid.NewGuid()** --> we will store this into a variable as a string, and now we will use this variable as a value for the Id.
         - at the end, we will seed this list inside the builder object. --> we will provide roles list to **IdentityRole** entity. --> ```builder.Entity<IdentityRole>().HasData(roles);```
          ![Screenshot (18)](https://github.com/user-attachments/assets/397792bb-c83d-4d18-91b1-283e987bd194)
+        - `ConcurrencyStamp` : Used for concurrency control, to track and verify that an entity (like a role) has not been changed by another process before updating it.
+        - `Name` : The user-friendly name of the role, like `"Reader"` or `"Writer"`.
+        - `NormalizedName` : A standardized (usually uppercase) version of the `Name`, used for case-insensitive comparisons.
+        - By using both `Name` and `NormalizedName`, the system is able to store both the readable form and an efficient version for comparisons, improving both usability and performance in lookups.
       
 
 
