@@ -192,6 +192,9 @@
    4. Add athentication into middleware pipeline -->  app.UseAuthentication();
       - ![Capture-15](https://github.com/user-attachments/assets/34c4dbe0-8ad9-4f7d-a4cf-a7c3decfeef3)
       - **app.UseAuthentication();**  --> should be above **app.UseAuthorization** --> because authentication happens before authorization
+      - Ager controller ke upper **[Authorize]** likh diya jaye to jo bhi http request aayengi is controller ke paas, vo sabhi bina JWT authentication ke data access or post data nhee kar payengi.
+      - ![Capture-16](https://github.com/user-attachments/assets/a7d00e6f-6151-4936-bb01-d1265efb4b43)
+
 
 
 
