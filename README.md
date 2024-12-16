@@ -237,6 +237,11 @@
       4. `ConcurrencyStamp`:
          - Type: `string`
          - A unique stamp used for concurrency control, ensuring that the role hasn’t been modified by another process when you're making changes to it. This is used for optimistic concurrency checking, which helps prevent overwriting changes when multiple users or processes are working with the same role.
+    ## How is `IdentityRole` Used?
+   In a typical application using ASP.NET Core Identity:
+   1. **Role Creation**: You define and create roles for your application, such as "Admin", "User", "Reader", or "Editor", depending on the needs of your application. This is done by creating instances of the `IdentityRole` class and adding them to the `RoleManager<IdentityRole>`.
+   2. **Role Assignment**: You assign users to these roles using the `UserManager<TUser>` and `RoleManager<IdentityRole>` services, typically by calling `AddToRoleAsync` on the user manager. Once a user is assigned a role, they inherit the permissions associated with that role.
+   3. **Role-based Authorization**: Once roles are assigned to users, you can use role-based authorization to restrict access to parts of your application. For example, you can use attributes like `[Authorize(Roles = "Admin")]` to specify that only users in the "Admin" role can access certain pages or perform certain actions.
       
 
 
