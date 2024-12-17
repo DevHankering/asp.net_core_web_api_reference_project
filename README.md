@@ -306,7 +306,7 @@
           options.Password.RequireLowercase = false;
           options.Password.RequireNonAlphanumeric = false;
           options.Password.RequireUppercase = false;
-          options.Password.RequireLength = 6;
+          options.Password.RequiredLength = 6;
           options.Password.RequiredUniqueChars = 1;
      });
 
@@ -320,6 +320,84 @@
      -  After creating Auth controller --> we will register a user.
      -  Now that we have a user created, the user will log in to our application using the username and password that they have and we will be checking the username and password and seeing if we have the user registered. after that we will create a token for them once they have successfully told us that they are a valid user.
      -  So for that we need a login action method and this will be another post method.
+    
+    ## Creating the User
+   ```
+   var identityUser = new IdentityUser
+   {
+       UserName = registerRequestDto.Username,
+       Email = registerRequestDto.Username
+   };
+   ```
+   - `IdentityUser` is the default class that represents a user
+  
+     ## Creating the User in the Database
+     ```
+     var identityResult = await userManager.CreateAsync(identityUser, registerRequestDto.Password);
+     ```
+     - `userManager.CreateAsync` is called to attempt to create the user in the database with the provided username and password.
+     - The result is stored in the `identityResult` variable, which contains information about whether the user creation was successful or not (success/failure, error messages, etc.).
+    
+       ```
+            if (identityResult.Succeeded)
+        {
+           //Add roles to this User
+           if (registerRequestDto.Roles != null && registerRequestDto.Roles.Any())
+        {
+            identityResult = await userManager.AddToRolesAsync(identityUser, registerRequestDto.Roles);
+        
+             if (identityResult.Succeeded)
+           {
+            return Ok("User was registered! Please login.");
+           }
+         }
+       }
+
+       ```
+       - If the `CreateAsync` operation was successful (`identityResult.Succeeded` is `true`), the code proceeds to check if any roles are provided in the `registerRequestDto.Roles` list.
+       - If roles are provided (i.e., `Roles` is not `null` and contains at least one role), the `userManager.AddToRolesAsyn` method is called to assign the specified roles to the newly created user.
+              - The method takes the `identityUser` (newly created user) and a list of roles (`registerRequestDto.Roles`) to assign to the user.
+              - After attempting to add the roles, the result is again checked. If adding the roles is successful (`identityResult.Succeeded` is `true`), an HTTP 200 OK response is returned with the message: `"User was registered! Please login."`.
+
+         ## Summary of Flow:
+          - A new `IdentityUser` is created using the username and email from the `registerRequestDto.`
+          - The user is attempted to be created with the specified password.
+          - If the user creation is successful, the code checks whether any roles are provided.
+          - If roles are provided, the roles are added to the user.
+          - If everything is successful, the method returns a success message (`200 OK`).
+          - If any step fails (user creation or role assignment), it returns a failure message (`400 Bad Request`).
+          - `userManager` is an instance of `UserManager<IdentityUser>`, which is responsible for managing users in ASP.NET Identity (e.g., creating users, assigning roles).
+          - `registerRequestDto` is a Data Transfer Object (DTO) that contains properties like `Username`, `Password`, and `Roles`. The `Roles` property is a list of roles the user should be assigned to after creation.
+        
+    ```
+    var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
+
+            if(user != null)
+            {
+                var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+                if (checkPasswordResult)
+                {
+                    //Create Token
+
+                    return Ok();
+                }
+            }
+
+            return BadRequest("Username or password incorrect");
+    ```
+
+   ```
+   var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
+   ```
+   - This method tries to find a user in the database based on their email (or username in this case).
+   - `userManager`: This is an instance of UserManager<TUser>.
+   - `UserManager` is used for interacting with user data and handling common user management tasks like creating, deleting, updating users, and checking user credentials.
+   - `userManager.CheckPasswordAsync`: This method checks if the provided password (`loginRequestDto.Password`) matches the password for the found `user` object.
+     ```
+      var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+     ```
+     -  If a user was found, this line asynchronously checks whether the provided password matches the hashed password stored in the database for that user.
+
      
 
          
