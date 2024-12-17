@@ -368,6 +368,35 @@
           - If any step fails (user creation or role assignment), it returns a failure message (`400 Bad Request`).
           - `userManager` is an instance of `UserManager<IdentityUser>`, which is responsible for managing users in ASP.NET Identity (e.g., creating users, assigning roles).
           - `registerRequestDto` is a Data Transfer Object (DTO) that contains properties like `Username`, `Password`, and `Roles`. The `Roles` property is a list of roles the user should be assigned to after creation.
+        
+    ```
+    var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
+
+            if(user != null)
+            {
+                var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+                if (checkPasswordResult)
+                {
+                    //Create Token
+
+                    return Ok();
+                }
+            }
+
+            return BadRequest("Username or password incorrect");
+    ```
+
+   ```
+   var user = await userManager.FindByEmailAsync(loginRequestDto.Username);
+   ```
+   - This method tries to find a user in the database based on their email (or username in this case).
+   - `userManager`: This is an instance of UserManager<TUser>.
+   - `UserManager` is used for interacting with user data and handling common user management tasks like creating, deleting, updating users, and checking user credentials.
+   - `userManager.CheckPasswordAsync`: This method checks if the provided password (`loginRequestDto.Password`) matches the password for the found `user` object.
+     ```
+      var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
+     ```
+     -  If a user was found, this line asynchronously checks whether the provided password matches the hashed password stored in the database for that user.
 
      
 
