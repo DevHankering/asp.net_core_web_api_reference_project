@@ -14,7 +14,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class RegionsController : ControllerBase
     {
         private readonly NZWalksDbContext dbContext;
@@ -30,6 +30,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
         //Get All Regions
         //Get: https://localhost:portnumber/api/regions
         [HttpGet]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
             //this way, we can give data to our api without using database
@@ -84,6 +85,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
         // get: https://localhost:postnumber/api/regions/{id}
         [HttpGet]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             //step1. Get Data from Database - domain models
@@ -115,6 +117,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
         //POST: https://localhost:portnumber/api/regions
         [HttpPost]
         [ValidateModel] // this is ValidateModelAttribute that we just created
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto) // we will use AddRegionRequestDto inside the controller as a parameter 
         {                                                                               // because we want information comming from the client
 
@@ -165,6 +168,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
         [HttpPut]
         [ValidateModel]
         [Route("{id:guid}")]
+        [Authorize(Roles = "Writer")] // put ki permission sirf writer ke pass hai
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
             //if (ModelState.IsValid)      //>>replaced by [ValidateModel]
@@ -226,6 +230,7 @@ namespace asp.net_core_web_api_reference_project.Controllers
         //DELETE: https://localhost:postnumber/api/regions/{id}
         [HttpDelete]
         [Route("{id:guid}")]
+        [Authorize(Roles = "Reader,Writer")] // ager empty string de doge tab bhi delete ki permission sab ke pass hongi
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {   
             var regionDomainModel = await regionRepository.DeleteAsync(id);

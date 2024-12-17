@@ -1,4 +1,5 @@
 ﻿using asp.net_core_web_api_reference_project.DTO;
+using asp.net_core_web_api_reference_project.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,11 +11,13 @@ namespace asp.net_core_web_api_reference_project.Controllers
     public class AuthController : ControllerBase
     {
         private readonly UserManager<IdentityUser> userManager;
+        private readonly ITokenRepository tokenRepository;
 
-        public AuthController(UserManager<IdentityUser> userManager)
+        public AuthController(UserManager<IdentityUser> userManager, ITokenRepository tokenRepository)
         {
             this.userManager = userManager;  // we use userManager class that identity provides us to register a user or to create a user.
-                                                 // so we have to inject the user manager class.
+            this.tokenRepository = tokenRepository;
+            // so we have to inject the user manager class.
         }
 
         //POST: /api/Auth/Register 
@@ -60,9 +63,23 @@ namespace asp.net_core_web_api_reference_project.Controllers
                 var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
                 if (checkPasswordResult)
                 {
-                    //Create Token
+                    //Get Roles for this user
+                    var roles = await userManager.GetRolesAsync(user);
+                   
+                    if (roles != null)
+                    {
+                        //Create Token
+                        var jwtToken = tokenRepository.CreateJWTToken(user, roles.ToList());  // we are using ToList() because roles is IList for that reason we are converting it into list.
+                        //return Ok(jwtToken);
+                        var response = new LoginResponseDto
+                        {
+                            JwtToken = jwtToken
+                        };
 
-                    return Ok();
+                        return Ok(response);
+
+                    }
+
                 }
             }
 
