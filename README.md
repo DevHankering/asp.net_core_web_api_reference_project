@@ -337,6 +337,28 @@
      ```
      - `userManager.CreateAsync` is called to attempt to create the user in the database with the provided username and password.
      - The result is stored in the `identityResult` variable, which contains information about whether the user creation was successful or not (success/failure, error messages, etc.).
+    
+       ```
+            if (identityResult.Succeeded)
+        {
+           //Add roles to this User
+           if (registerRequestDto.Roles != null && registerRequestDto.Roles.Any())
+        {
+            identityResult = await userManager.AddToRolesAsync(identityUser, registerRequestDto.Roles);
+        
+             if (identityResult.Succeeded)
+           {
+            return Ok("User was registered! Please login.");
+           }
+         }
+       }
+
+       ```
+       - If the `CreateAsync` operation was successful (`identityResult.Succeeded` is `true`), the code proceeds to check if any roles are provided in the `registerRequestDto.Roles` list.
+       - If roles are provided (i.e., `Roles` is not `null` and contains at least one role), the `userManager.AddToRolesAsyn` method is called to assign the specified roles to the newly created user.
+              - The method takes the `identityUser` (newly created user) and a list of roles (`registerRequestDto.Roles`) to assign to the user.
+              - After attempting to add the roles, the result is again checked. If adding the roles is successful (`identityResult.Succeeded` is `true`), an HTTP 200 OK response is returned with the message: `"User was registered! Please login."`.
+
      
 
          
