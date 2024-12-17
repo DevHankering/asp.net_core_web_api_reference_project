@@ -359,6 +359,16 @@
               - The method takes the `identityUser` (newly created user) and a list of roles (`registerRequestDto.Roles`) to assign to the user.
               - After attempting to add the roles, the result is again checked. If adding the roles is successful (`identityResult.Succeeded` is `true`), an HTTP 200 OK response is returned with the message: `"User was registered! Please login."`.
 
+         ## Summary of Flow:
+          - A new `IdentityUser` is created using the username and email from the `registerRequestDto.`
+          - The user is attempted to be created with the specified password.
+          - If the user creation is successful, the code checks whether any roles are provided.
+          - If roles are provided, the roles are added to the user.
+          - If everything is successful, the method returns a success message (`200 OK`).
+          - If any step fails (user creation or role assignment), it returns a failure message (`400 Bad Request`).
+          - `userManager` is an instance of `UserManager<IdentityUser>`, which is responsible for managing users in ASP.NET Identity (e.g., creating users, assigning roles).
+          - `registerRequestDto` is a Data Transfer Object (DTO) that contains properties like `Username`, `Password`, and `Roles`. The `Roles` property is a list of roles the user should be assigned to after creation.
+
      
 
          
