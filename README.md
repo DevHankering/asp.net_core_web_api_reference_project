@@ -320,6 +320,23 @@
      -  After creating Auth controller --> we will register a user.
      -  Now that we have a user created, the user will log in to our application using the username and password that they have and we will be checking the username and password and seeing if we have the user registered. after that we will create a token for them once they have successfully told us that they are a valid user.
      -  So for that we need a login action method and this will be another post method.
+    
+    ## Creating the User
+   ```
+   var identityUser = new IdentityUser
+   {
+       UserName = registerRequestDto.Username,
+       Email = registerRequestDto.Username
+   };
+   ```
+   - `IdentityUser` is the default class that represents a user
+  
+     ## Creating the User in the Database
+     ```
+     var identityResult = await userManager.CreateAsync(identityUser, registerRequestDto.Password);
+     ```
+     - `userManager.CreateAsync` is called to attempt to create the user in the database with the provided username and password.
+     - The result is stored in the `identityResult` variable, which contains information about whether the user creation was successful or not (success/failure, error messages, etc.).
      
 
          
