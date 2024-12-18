@@ -409,6 +409,33 @@
 - ### **Parameters**:
      - `IdentityUser user` — The user for whom the token is being created. It includes properties like `Email`, `UserName`, etc.
      - `List<string> roles` — A list of roles associated with the user, e.g., "Admin", "User", etc.
+ 
+- ## 2.Create Claims
+  ```
+  var claims = new List<Claim>();
+
+  claims.Add(new Claim(ClaimTypes.Email, user.Email));
+
+  ```
+  - **Claims**: Claims are key-value pairs that represent the user's information, which will be embedded in the JWT.
+  - `ClaimTypes.Email` is used to add the user's email to the list of claims. `user.Email` is the email address of the authenticated user.
+    ```
+    foreach(var role in roles)
+    {
+         claims.Add(new Claim(ClaimTypes.Role, role));
+    }
+
+    ```
+    - **Roles**: A loop iterates over the list of roles and adds each role to the claims. The `ClaimTypes.Role` indicates that this claim type will represent the user's roles.
+   
+ - ## 3.Create the Signing Key
+   ```
+   var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+   ```
+   - **SymmetricSecurityKey**:  This is the key used for signing the JWT. It uses a secret key, which is fetched from the application's configuration settings (`configuration["Jwt:Key"]`).
+   - `Encoding.UTF8.GetBytes()` is used to convert the string key into a byte array, which is required for the `SymmetricSecurityKey` constructor.
+
+
 
      
 
