@@ -434,6 +434,53 @@
    ```
    - **SymmetricSecurityKey**:  This is the key used for signing the JWT. It uses a secret key, which is fetched from the application's configuration settings (`configuration["Jwt:Key"]`).
    - `Encoding.UTF8.GetBytes()` is used to convert the string key into a byte array, which is required for the `SymmetricSecurityKey` constructor.
+  
+- ## 4.Signing Credentials
+  ```
+  var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+  ```
+  - **SigningCredentials**: These define how the JWT will be signed. In this case:
+      - The `key` is the signing key created earlier.
+      - `SecurityAlgorithms.HmacSha256` specifies the signing algorithm — HMAC with SHA-256, which is a secure hash algorithm for signing the JWT.
+   
+  - ## 5.Create the JWT Token
+    ```
+    var token = new JwtSecurityToken(
+    configuration["Jwt:Issuer"],
+    configuration["Jwt:Audience"],
+    claims,
+    expires: DateTime.Now.AddMinutes(15),
+    signingCredentials: credentials
+    );
+    
+   ```
+ - **JwtSecurityToken Constructor Parameters**:
+    - **Issuer**: `configuration["Jwt:Issuer"]` — The issuer of the token, typically the URL or name of your server or organization.
+    - **Audience**: `configuration["Jwt:Audience"]` — The audience for whom the token is intended. Usually, this would be your API or another service that consumes the JWT.
+    - **Claims**: The list of claims we created earlier (user's email and roles).
+    - **Expires**: `DateTime.Now.AddMinutes(15)` — The expiration time for the token. This token will expire 15 minutes from the time it is generated.
+    - **SigningCredentials**: The credentials used to sign the token, which include the signing algorithm and the key.
+  
+  - ## 6.Return the JWT as a String
+    ```
+    return new JwtSecurityTokenHandler().WriteToken(token);
+       ```
+    - **JwtSecurityTokenHandler**: This is a helper class provided by .NET to handle JWTs. `WriteToken()` takes the `JwtSecurityToken` object and serializes it into a compact, URL-safe JWT string format, which can be sent to the client.
+   
+      ## Summary
+      This method generates a JWT that includes the following:
+      - ### **1.Claims**:
+          - The user's email.
+          - The user's roles (from the `roles` list).
+      - ### **2.Security**:
+          - The token is signed using a secret key (from the application's configuration) with the HMAC-SHA256 algorithm.
+      - ### **3.Token Properties**:
+          - The token will expire in 15 minutes.
+          - The token has an issuer (`Issuer`) and an audience (`Audience`), both configured from settings.
+     Finally, the JWT is returned as a string, ready to be sent back to the client for authentication.
+
+
+ 
 
 
 
