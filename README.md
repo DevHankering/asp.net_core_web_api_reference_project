@@ -477,7 +477,7 @@
       - ### **3.Token Properties**:
           - The token will expire in 15 minutes.
           - The token has an issuer (`Issuer`) and an audience (`Audience`), both configured from settings.
-     Finally, the JWT is returned as a string, ready to be sent back to the client for authentication.
+    - Finally, the JWT is returned as a string, ready to be sent back to the client for authentication.
 
 
  
