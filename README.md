@@ -397,6 +397,18 @@
       var checkPasswordResult = await userManager.CheckPasswordAsync(user, loginRequestDto.Password);
      ```
      -  If a user was found, this line asynchronously checks whether the provided password matches the hashed password stored in the database for that user.
+    
+
+## JWT Creation
+- ## 1.Method Signature
+  ```
+  public string CreateJWTToken(IdentityUser user, List<string> roles)
+  
+  ```
+- ### **Return Type**: `string` — This method returns a JWT as a string.
+- ### **Parameters**:
+     - `IdentityUser user` — The user for whom the token is being created. It includes properties like `Email`, `UserName`, etc.
+     - `List<string> roles` — A list of roles associated with the user, e.g., "Admin", "User", etc.
 
      
 
