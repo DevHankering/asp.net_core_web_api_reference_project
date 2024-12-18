@@ -479,6 +479,11 @@
           - The token has an issuer (`Issuer`) and an audience (`Audience`), both configured from settings.
     - Finally, the JWT is returned as a string, ready to be sent back to the client for authentication.
 
+## **Example Output**
+- If this method were called for a user with the email user@example.com and roles ["Admin", "User"], the JWT returned might look like this (in a compact format):
+  ```
+  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJBZG1pbiIsIlVzZXIiXSwiaXNzIjoiY29tcGFueS5jb20iLCJhdWQiOiJhcGkuY29tcGFueS5jb20iLCJleHBpcmVkIjoxNjYwMDMzNzYwfQ.S7_D9y6x8gNxfWgfkF5lHnTj_K0Gjr9b6Sryj0qf-V8
+```
 
  
 
