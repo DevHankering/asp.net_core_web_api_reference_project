@@ -489,6 +489,7 @@
 
 - # ToChck Authentication and Authorization in swagger:
    - just add these lines into your program.cs file
+   - at the top in program.cs file add this --> `using Microsoft.OpenApi.Models`
      ```
      builder.Services.AddSwaggerGen(options =>
      {
@@ -519,6 +520,7 @@
          }
       });
      });
+     ```
   
  
 
