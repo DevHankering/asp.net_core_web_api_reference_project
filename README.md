@@ -483,8 +483,43 @@
 - If this method were called for a user with the email user@example.com and roles ["Admin", "User"], the JWT returned might look like this (in a compact format):
   ```
   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJBZG1pbiIsIlVzZXIiXSwiaXNzIjoiY29tcGFueS5jb20iLCJhdWQiOiJhcGkuY29tcGFueS5jb20iLCJleHBpcmVkIjoxNjYwMDMzNzYwfQ.S7_D9y6x8gNxfWgfkF5lHnTj_K0Gjr9b6Sryj0qf-V8
-```
+    ```
 
+
+
+- # ToChck Authentication and Authorization in swagger:
+   - just add these lines into your program.cs file
+     ```
+     builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "NZ Walks API", Version = "v1" });
+    options.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = JwtBearerDefaults.AuthenticationScheme
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = JwtBearerDefaults.AuthenticationScheme
+                },
+                Scheme = "Oauth2",
+                Name = JwtBearerDefaults.AuthenticationScheme,
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+         }
+      });
+    });
+  ```
  
 
 
