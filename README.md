@@ -163,13 +163,17 @@
        - System.IdentityModel.Tokens.Jwt
        - Microsoft.AspNetCore.Identity.EntityFrameworkCore
     2. ### Configure JWT Settings in appsettings.json
-       - "Jwt": {
-    "Issuer": "yourdomain.com",
-    "Audience": "yourdomain.com",
-    "SecretKey": "your-very-secret-key-here"
-}
+       ```
+               - "Jwt": {
+            "Issuer": "yourdomain.com",
+            "Audience": "yourdomain.com",
+            "SecretKey": "your-very-secret-key-here"
+        }
+
+       ```
+       
        - you can find YourDomain here --> means applicationURL --> thirdClickOnProjectName>GoToProperties>General>OpenDebugLaunchProfilesUI>https>AppURL
-      3. ### Configure JWT authentication in program.cs file
+      4. ### Configure JWT authentication in program.cs file
          - **builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
